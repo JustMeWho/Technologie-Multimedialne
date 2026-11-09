@@ -1,0 +1,14 @@
+# Dane uzytkownikow i pliki przeslane do z5
+z5/files/*
+!z5/files/.htaccess
+!z5/files/.gitkeep
+
+# Przeslane awatary (zostawiamy tylko domyslny)
+*/media/avatars/*
+!*/media/avatars/default.png
+
+# Logi, pliki tymczasowe i systemowe
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

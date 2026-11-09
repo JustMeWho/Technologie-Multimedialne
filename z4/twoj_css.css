@@ -1,0 +1,41 @@
+/* ============================================================================
+   Style indywidualne aplikacji z4 (Bootstrap 5)
+   ============================================================================ */
+
+body { background-color: #ffffe6; }
+
+.navbar { min-height: 40px; font-size: 15px; }
+
+.sekcja1
+{
+	height: auto; width: auto; text-align: left;
+	border-color: green; border-width: 1px;
+	margin-top: 58px; margin-left: 5px; margin-right: 1px; margin-bottom: 5px;
+}
+
+.page-footer
+{
+	width: auto; font-size: 11px; color: green;
+	border: solid; border-width: 1px; border-color: green;
+	margin-left: 1px; margin-right: 1px; margin-bottom: 1px;
+}
+
+/* Ikony usług monitorowanych */
+.service-icon { width: 22px; height: 22px; vertical-align: middle; }
+
+/* Pulsowanie ikony awarii trwającej dłużej niż 20 sekund */
+@keyframes z4pulse {
+	0%   { opacity: 1;   transform: scale(1); }
+	50%  { opacity: 0.35; transform: scale(1.18); }
+	100% { opacity: 1;   transform: scale(1); }
+}
+.icon-alarm-pulse { animation: z4pulse 1s ease-in-out infinite; }
+
+/* Wiersz z aktywną awarią - delikatne tło */
+tr.row-down > td { background-color: #fff1f1; }
+
+.table-monitor { font-size: 12px; }
+.table-monitor th, .table-monitor td { vertical-align: middle; white-space: nowrap; }
+
+/* Legenda ikon */
+.legenda img { width: 20px; height: 20px; vertical-align: middle; }

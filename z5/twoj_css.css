@@ -1,0 +1,53 @@
+/* ============================================================================
+   Style indywidualne aplikacji z5 (MyCloud) - Bootstrap 5
+   ============================================================================ */
+
+body { background-color: #ffffe6; }
+
+.navbar { min-height: 40px; font-size: 15px; }
+
+.sekcja1
+{
+	height: auto; width: auto; text-align: left;
+	border-color: green; border-width: 1px;
+	margin-top: 58px; margin-left: 5px; margin-right: 1px; margin-bottom: 5px;
+}
+
+.page-footer
+{
+	width: auto; font-size: 11px; color: green;
+	border: solid; border-width: 1px; border-color: green;
+	margin-left: 1px; margin-right: 1px; margin-bottom: 1px;
+}
+
+/* Pasek narzedzi menedzera plikow */
+.fm-toolbar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.fm-toolbar .btn { display: inline-flex; align-items: center; gap: .3rem; }
+.fm-toolbar img { vertical-align: middle; }
+
+/* Okruszki (breadcrumb) */
+.fm-breadcrumb { font-size: 14px; }
+.fm-breadcrumb .sep { color: #999; margin: 0 .3rem; }
+
+/* Tabela plikow */
+.fm-table { font-size: 13px; }
+.fm-table th, .fm-table td { vertical-align: middle; }
+.fm-table td.fm-name { word-break: break-all; }
+.fm-table img.fm-kind { width: 20px; height: 20px; vertical-align: middle; margin-right: .35rem; }
+
+/* Kafelki / tryb multimediow */
+.fm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: .75rem; }
+.fm-card { border: 1px solid #d0d7de; border-radius: .5rem; background: #fff; overflow: hidden; }
+.fm-card .fm-thumb { height: 140px; display: flex; align-items: center; justify-content: center; background: #f6f8fa; overflow: hidden; }
+.fm-card .fm-thumb img { max-width: 100%; max-height: 140px; object-fit: contain; }
+.fm-card .fm-thumb .fm-big-icon { width: 56px; height: 56px; }
+.fm-card .fm-body { padding: .5rem .6rem; }
+.fm-card .fm-title { font-size: 13px; font-weight: 600; word-break: break-all; }
+.fm-card .fm-meta { font-size: 11px; color: #6c757d; }
+.fm-card audio, .fm-card video { width: 100%; }
+
+/* Komunikat ostrzegawczy o nieudanym logowaniu */
+.alert-break-in { border: 2px solid #dc3545; }
+
+/* Podswietlenie katalogow */
+.fm-dir { font-weight: 600; }

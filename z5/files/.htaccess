@@ -1,0 +1,9 @@
+# Bezposredni dostep do plikow uzytkownikow jest zablokowany.
+# Pliki sa serwowane wylacznie przez skrypt download.php (po zalogowaniu).
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
